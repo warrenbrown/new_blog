@@ -3,12 +3,25 @@
 <head>
   <title>NewBlog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Khand:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="sidebar">
+    <ul>
+      <li class="category">Website</li>
+      <li>Blog</li>
+      <li>About</li>
 
-<%= yield %>
+    </ul>
+
+  </div>
+
+  <div id="main_content">
+    <%= yield %>
+  </div>
+
 
 </body>
 </html>
